@@ -6,6 +6,8 @@ GPIO.BOARD - pin numbers in orders as on board - reommended for starters or if y
 
 or GPIO.BCM - random gpio pin number based on chip   - for pro users
 
+for this example we have used GPIO.BOARD and pin number 8 for controlling the LED 
+
   by Rahul Sharma for Yolabs 
   This example code is in the public domain.
   https://www.yolabs.in
