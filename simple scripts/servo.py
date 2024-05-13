@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BOARD) # Sets the pin numbering system to use the physical lay
 
 # Set up pin 11 for PWM
 GPIO.setup(11,GPIO.OUT)  # Sets up pin 11 to an output (instead of an input)
-p_servo = GPIO.PWM(11, 50)     # Sets up pin 11 as a PWM pin
+p_servo = GPIO.PWM(17, 50)     # Sets up pin 11 as a PWM pin
 p_servo.start(0)               # Starts running PWM on the pin and sets it to 0
 
 # Move the servo back and forth
