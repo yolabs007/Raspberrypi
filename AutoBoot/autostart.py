@@ -39,7 +39,7 @@ def run_robot_code():
     Launch Robotcode.py as a subprocess, wait until it finishes (or crashes).
     """
     print("Launching Robotcode.py...")
-    process = subprocess.Popen(["python3", "/home/pi/Robotcode.py"])
+    process = subprocess.Popen(["python3", "/home/pi/robotcode.py"])
     # Wait for Robotcode.py to exit
     return_code = process.wait()
     print(f"Robotcode.py exited with code {return_code}")
