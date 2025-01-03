@@ -1,5 +1,5 @@
-# to make a file bootable here  you need to follow these simple steps 
-# to make this work please ensure you have a file called autostart.py  saved home/pi/autostart.py
+# to make a file bootable here  you need to follow these simple steps
+# to make this work please ensure you have a file called autostart.py  saved at location  home/pi/autostart.py 
 
 #Step-1 copy paste the below code it will create a file autostart.service and open it in nano
 sudo nano /etc/systemd/system/autostart.service
@@ -29,4 +29,9 @@ sudo systemctl daemon-reload
 
 # Step-5 Enable it so it runs automatically on every boot:
 sudo systemctl enable autostart.service
+
+# Step-6 Trouble Shoot - If it is not working please run below commmand to check all is loading/active and fine 
+
+sudo systemctl status autostart.service
+
 
