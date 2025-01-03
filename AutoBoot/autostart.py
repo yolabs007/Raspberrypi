@@ -12,10 +12,10 @@ import time
 import subprocess
 
 # GPIO pin for the Start Button
-START_SWITCH_PIN = 17
+START_SWITCH_PIN = 11
 
 def setup_gpio():
-    GPIO.setmode(GPIO.BCM)
+    GPIO.setmode(GPIO.BOARD)
     # Use pull-up so pin reads HIGH normally, LOW when button is pressed
     GPIO.setup(START_SWITCH_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
